@@ -21,6 +21,7 @@ body {
     align-items: center;
     font-family: 'Kumbh Sans', sans-serif;
     background: linear-gradient(180deg, var(--soft-violet) 0%, var(--soft-blue) 100%);
+    overflow: hidden;
 }
 
 .faq-heading {
@@ -51,8 +52,9 @@ body {
     padding: 0;
 }
 
-.accordion:hover {
-    color: var(--soft-red);
+.accordion-active{
+    font-weight: 700;
+    color: var(--very-dark-desaturated-blue);
 }
 
 .panel {
@@ -80,7 +82,7 @@ body {
     align-items: center;
 }
 
-.icon {
+.icon-mobile{
     z-index: 1;
     position: relative;
     height: auto;
@@ -88,12 +90,24 @@ body {
     margin-top: -125px;
 }
 
-.icon-shadow {
+.icon-shadow-desktop {
+    display: none;
+}
+
+.icon-shadow-mobile {
     z-index: 0;
     position: relative;
     height: auto;
     width: 15.625em;
     margin-top: -80px;
+}
+
+.icon-desktop {
+    display: none;
+}
+
+.icon-box-desktop {
+    display: none;
 }
 
 .arrow-icon {
@@ -102,6 +116,60 @@ body {
     transition: all;
 }
 
-.arrow-icon:active {
+.arrow-icon-active {
     transform: rotate(0deg);
+}
+
+@media only screen and (min-width: 1024px) {
+    .faq-container {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 0;
+        overflow: hidden;
+        height: 450px;
+        width: 800px;
+    }
+
+    .accordion:hover {
+        color: var(--soft-red);
+    }
+
+    .icon-mobile{
+        display: none;
+    }
+    
+    .icon-shadow-mobile {
+        display: none;
+    }
+
+    .icon-desktop {
+        display: block;
+        padding: 2em 2em;
+        position: relative;
+        height: auto;
+        width: 30em;
+        margin-left: -90px;
+        z-index: 1;
+    }
+
+    .icon-box-desktop {
+        display: block;
+        position: absolute;
+        width: 13em;
+        margin-left: -190px;
+        margin-top: 40px;
+        z-index: 2;
+    }
+
+    .desktop {
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+        align-items: center;
+    }
+
+    .faq-text {
+        width: 300px;
+    }
 }
