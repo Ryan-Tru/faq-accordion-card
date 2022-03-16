@@ -29,10 +29,6 @@ body {
     color: var(--very-dark-desaturated-blue);
 }
 
-.faq-text {
-    margin-top: 6em;
-}
-
 .faq-container {
     display: flex;
     flex-direction: column;
@@ -40,12 +36,16 @@ body {
     margin: auto;
     background-color: white;
     border-radius: 1.25em;
-    padding: 0.75em;
+    padding: 1em 1em 2em 1em;
 }
 
 .accordion {
+    width: 100%;
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
     font-family: 'Kumbh Sans', sans-serif;
-    color: var(--dark-grayish-blue);
+    color: var(--very-dark-grayish-blue);
     background-color: white;
     border: none;
     padding: 0;
@@ -56,24 +56,52 @@ body {
 }
 
 .panel {
+    display: none;
     font-size: 0.75em;
     color: var(--dark-grayish-blue);
+    padding-right: 2.2em;
+}
+
+.panel p {
+    margin: 0;
+    margin-top: 0.75em;
+}
+
+.horizontal-line {
+    display: block;
+    border-bottom: 1px solid var(--light-grayish-blue);
+    margin: 0.75em 0;
+}
+
+.icon-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .icon {
     z-index: 1;
-    position: absolute;
+    position: relative;
     height: auto;
-    width: 250px;
-    margin-left: 1.25em;
-    top: 6.5%;
+    width: 15.625em;
+    margin-top: -125px;
 }
 
 .icon-shadow {
     z-index: 0;
-    position: absolute;
+    position: relative;
     height: auto;
-    width: 250px;
-    margin-left: 1.25em;
-    top: 18%;
+    width: 15.625em;
+    margin-top: -80px;
+}
+
+.arrow-icon {
+    align-self: center;
+    transform: rotate(180deg);
+    transition: all;
+}
+
+.arrow-icon:active {
+    transform: rotate(0deg);
 }

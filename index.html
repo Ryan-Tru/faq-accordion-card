@@ -11,39 +11,58 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+  <!-- Start faq container -->
   <main class="faq-container">
 
-    <img class="icon" src="/images/illustration-woman-online-mobile.svg" alt="Woman icon">
-    <img class="icon-shadow" src="images/bg-pattern-mobile.svg" alt="Icon's shadow">
+    <!-- Start icon container -->
+    <div class="icon-container">
+      <img class="icon" src="/images/illustration-woman-online-mobile.svg" alt="Woman icon">
+      <img class="icon-shadow" src="images/bg-pattern-mobile.svg" alt="Icon's shadow">
+    </div>
+    <!-- End icon container -->
 
-    <div class="faq-text">
+    <!-- Start faq text section -->
+    <section class="faq-text">
       <h2 class="faq-heading">FAQ</h2>
 
-      <section class="faq-accordion">
-        <button class="accordion">How many team members can I invite?</button>
+      <div class="faq-accordion">
+        <button class="accordion">How many team members can I invite? <img class="arrow-icon" src="images/icon-arrow-down.svg" alt="icon arrow" aria-hidden="true"></button>
         <div class="panel">
           <p>You can invite up to 2 additional users on the Free plan. There is no limit on 
             team members for the Premium plan.</p>
         </div>
-        <button class="accordion">What is the maximum file upload size?</button>
+        <div class="horizontal-line"></div>
+
+        <button class="accordion">What is the maximum file upload size? <img class="arrow-icon" src="images/icon-arrow-down.svg" alt="icon arrow" aria-hidden="true"></button>
         <div class="panel">
           <p>No more than 2GB. All files in your account must fit your allotted storage space.</p>
         </div>
-        <button class="accordion">How do I reset my password?</button>
+        <div class="horizontal-line"></div>
+
+        <button class="accordion">How do I reset my password? <img class="arrow-icon" src="images/icon-arrow-down.svg" alt="icon arrow" aria-hidden="true"></button>
         <div class="panel">
           <p>Click “Forgot password” from the login page or “Change password” from your profile page.
             A reset link will be emailed to you.</p>
         </div>
-        <button class="accordion">Can I cancel my subscription?</button>
+        <div class="horizontal-line"></div>
+
+        <button class="accordion">Can I cancel my subscription? <img class="arrow-icon" src="images/icon-arrow-down.svg" alt="icon arrow" aria-hidden="true"></button>
         <div class="panel">
           <p>Yes! Send us a message and we'll process your request no questions asked.</p>
         </div>
-        <button class="accordion">Do you provide additional support?</button>
+        <div class="horizontal-line"></div>
+
+        <button class="accordion">Do you provide additional support? <img class="arrow-icon" src="images/icon-arrow-down.svg" alt="icon arrow" aria-hidden="true"></button>
         <div class="panel">
           <p>Chat and email support is available 24/7. Phone lines are open during normal business hours.</p>
         </div>
-      </section>
-    </div>
+        <div class="horizontal-line"></div>
+
+      </div>
+    </section>
+    <!-- End faq text section -->
   </main>
+
+  <script src="app.js" defer></script>
 </body>
 </html>
