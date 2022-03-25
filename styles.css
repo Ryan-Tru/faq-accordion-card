@@ -129,6 +129,10 @@ body {
         overflow: hidden;
         height: 450px;
         width: 800px;
+        background-image: url('images/bg-pattern-desktop.svg');
+        background-position: -440px 70%;
+        background-size: cover;
+        background-repeat: no-repeat;
     }
 
     .accordion:hover {
